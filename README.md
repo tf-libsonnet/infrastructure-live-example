@@ -8,7 +8,7 @@ module to deploy each.
 
 **This is not a fully executable example**.
 
-Refer to [Comparison to Terraform HCL](http://tflibsonnet.com/docs/what-is-tf-libsonnet/#comparison-to-terraform-hcl)
+Refer to [Comparison to Terraform HCL](https://docs.tflibsonnet.com/docs/what-is-tf-libsonnet/#comparison-to-terraform-hcl)
 for the motivating example and a full walkthrough.
 
 ## Usage
