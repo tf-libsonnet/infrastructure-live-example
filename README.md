@@ -41,3 +41,8 @@ This will output all the Terraform code to the `out` directory, resulting in the
     └── vpc
         └── main.tf.json
 ```
+
+## Support
+
+If you have any questions about how to use the `tf.libsonnet` libraries, ask in the [Organization GitHub
+Discussion](https://github.com/orgs/tf-libsonnet/discussions).
