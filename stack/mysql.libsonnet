@@ -14,7 +14,9 @@ local aws = import 'github.com/tf-libsonnet/hashicorp-aws/main.libsonnet';
       )
       + tf.withModule(
         'mysql',
-        'github.com/myorg/my-mysql?ref=v1.0.8',
+        // NOTE: For simplicity, we self reference the current repository but in production, you should move the modules
+        // to a different repo, and use a concrete ref tag.
+        'github.com/tf-libsonnet/infrastructure-live-example//modules/mysql?ref=main',
         {
           name: envName,
           vpc_id: o._ref.data.aws_vpc.vpc.get('id'),

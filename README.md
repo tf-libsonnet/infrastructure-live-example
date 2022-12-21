@@ -6,7 +6,10 @@ This repository contains an example of how to use [Jsonnet](https://jsonnet.org/
 This represents a toy example of an AWS stack containing a VPC and MySQL database, that uses a fictional Terraform
 module to deploy each.
 
-**This is not a fully executable example**.
+> **NOTE**
+>
+> The underlying module calls use `null_resource`s to simulate the resources. However, the general pattern should be
+> extensible to real world modules and use cases.
 
 Refer to [Comparison to Terraform HCL](https://docs.tflibsonnet.com/docs/what-is-tf-libsonnet/#comparison-to-terraform-hcl)
 for the motivating example and a full walkthrough.

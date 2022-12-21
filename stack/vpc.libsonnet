@@ -7,7 +7,9 @@ local tf = import 'github.com/tf-libsonnet/core/main.libsonnet';
     local o =
       tf.withModule(
         'vpc',
-        'github.com/myorg/my-vpc?ref=v1.0.8',
+        // NOTE: For simplicity, we self reference the current repository but in production, you should move the modules
+        // to a different repo, and use a concrete ref tag.
+        'github.com/tf-libsonnet/infrastructure-live-example//modules/vpc?ref=main',
         {
           name: envName,
           cidr_block: cidrBlock,
